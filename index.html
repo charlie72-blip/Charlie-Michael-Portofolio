@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id" data-lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Charlie Michael | Frontend Developer & UI Engineer</title>
+    <meta name="description" content="Charlie Michael is a creative frontend developer specializing in modern web design, React development, and performance optimization. Based in Indonesia, crafting digital experiences.">
+    <meta name="keywords" content="frontend developer, web developer, UI engineer, React developer, web design, portfolio, Charlie Michael, Indonesia">
+    <meta name="author" content="Charlie Michael">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Charlie Michael | Frontend Developer">
+    <meta property="og:description" content="Creative frontend developer crafting modern, fast, and user-focused websites.">
+    <meta property="og:type" content="website">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ============ INTRO SPLASH ============ -->
+    <div class="intro-splash" id="introSplash" role="status" aria-live="polite">
+        <div class="intro-content">
+            <span class="intro-typing" id="introTyping"></span>
+            <span class="intro-cursor" aria-hidden="true"></span>
+        </div>
+    </div>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar navbar-premium">
+        <div class="container nav-content-premium">
+            <div class="navbar-left">© Code by Charlie Michael</div>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+                    <li><a href="#work" class="nav-link" data-i18n="nav.project">Work</a></li>
+                    <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+                <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+                    <span class="lang-option active" data-lang="id">ID</span>
+                    <span class="lang-divider">|</span>
+                    <span class="lang-option" data-lang="en">EN</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero hero-simple" id="home">
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+        
+        <div class="hero-container">
+            <h1 class="hero-heading" data-i18n="hero.heading">Hi, I'm Charlie Michael.</h1>
+            
+            <div class="hero-location">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span data-i18n="hero.location">Indonesia</span>
+            </div>
+            
+            <p class="hero-text" data-i18n="hero.description">
+                I'm a web developer who creates clean, functional websites with modern design.
+            </p>
+        </div>
+    </section>
+
+    <!-- ============ ABOUT SECTION ============ -->
+    <section class="stats about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual scroll-reveal">
+                    <div class="about-card">
+                        <div class="about-avatar">
+                            <div class="about-avatar-circle" aria-hidden="true">CM</div>
+                            <div>
+                                <p class="about-role" data-i18n="about.role">Frontend Developer</p>
+                                <p class="about-location" data-i18n="about.location">Berbasis di Indonesia</p>
+                            </div>
+                        </div>
+                        <ul class="about-highlights">
+                            <li data-i18n="about.highlight1">UI bersih dengan design system yang rapi.</li>
+                            <li data-i18n="about.highlight2">Prioritas performa dengan alur UX jelas.</li>
+                        </ul>
+                    </div>
+                    <div class="about-stack">
+                        <p class="about-stack-title" data-i18n="about.stackTitle">Teknologi yang Digunakan</p>
+                        <div class="about-stack-list">
+                            <span>React</span>
+                            <span>JavaScript</span>
+                            <span>Tailwind CSS</span>
+                            <span>HTML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content scroll-reveal">
+                    <p class="about-kicker" data-i18n-html="about.kicker">HALO, SAYA <span class="wave-hand" aria-hidden="true">👋</span>
+                    </p>
+                    <h2 class="about-name">Charlie Michael</h2>
+                    <p class="about-description" data-i18n="about.description">
+                        Saya adalah creative frontend developer yang fokus membangun website modern dengan tampilan bersih, performa cepat, dan pengalaman pengguna yang jelas. Saya suka mengubah ide menjadi produk digital yang terasa hidup, responsif, dan siap digunakan untuk kebutuhan brand maupun personal project.
+                    </p>
+                    <div class="about-cta">
+                        <button class="btn btn-primary btn-large" id="aboutBookingBtn" data-i18n="about.ctaPrimary">Konsultasi Gratis</button>
+                    </div>
+                    <div class="about-socials">
+                        <a class="about-social-btn linkedin-btn" href="https://www.linkedin.com/in/charlimichael/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                            <span class="social-pill">in</span> LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ WORK SECTION ============ -->
+    <section class="project-showcase" id="work">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="project.title">Showcase Proyek</h2>
+                <p class="section-subtitle" data-i18n="project.subtitle">
+                    Hover ke tiap card untuk preview fokus project, klik untuk buka website project di tab baru.
+                </p>
+            </div>
+            <div class="project-stack-wrapper scroll-reveal">
+                <div class="project-stack">
+                    <a class="project-link-card card-rich card-a" href="https://gentlemanncut.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="View Barbershop Project">
+                        <img src="Barber.jpeg" alt="Barber website preview" class="project-image">
+                        <div class="project-content project-content-rich">
+                            <span class="project-index">01</span>
+                            <h3 data-i18n="project.card1.title">Barbershop</h3>
+                            <p class="project-meta" data-i18n="project.card1.meta">React + Tailwind CSS</p>
+                            <p class="project-description" data-i18n="project.card1.description">Website barbershop modern dengan booking yang jelas.</p>
+                            <div class="project-chip-list" aria-hidden="true">
+                                <span class="project-chip" data-i18n="project.card1.badge1">Maskulin UI</span>
+                                <span class="project-chip" data-i18n="project.card1.badge2">Booking Cepat</span>
+                            </div>
+                            <span class="project-card-cta" data-i18n="project.card1.cta">Lihat Website</span>
+                        </div>
+                    </a>
+                    <a class="project-link-card card-rich card-b" href="https://pro-automotif.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="View Car Workshop Project">
+                        <img src="Bengkel%20Mobil.jpeg" alt="Car workshop website preview" class="project-image">
+                        <div class="project-content project-content-rich">
+                            <span class="project-index">02</span>
+                            <h3 data-i18n="project.card2.title">Bengkel Mobil</h3>
+                            <p class="project-meta" data-i18n="project.card2.meta">Website Marketing</p>
+                            <p class="project-description" data-i18n="project.card2.description">Website bengkel mobil dengan layanan yang jelas.</p>
+                            <div class="project-chip-list" aria-hidden="true">
+                                <span class="project-chip" data-i18n="project.card2.badge1">Auto Service</span>
+                                <span class="project-chip" data-i18n="project.card2.badge2">Lead Funnel</span>
+                            </div>
+                            <span class="project-card-cta" data-i18n="project.card2.cta">Lihat Website</span>
+                        </div>
+                    </a>
+                    <a class="project-link-card card-rich card-c" href="https://klinik-aesthetic-3.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="View Aesthetic Clinic Project">
+                        <img src="kecantikan.jpeg" alt="Aesthetic Clinic" class="project-image">
+                        <div class="project-content project-content-rich">
+                            <span class="project-index">03</span>
+                            <h3 data-i18n="project.card3.title">Klinik Kecantikan</h3>
+                            <p class="project-meta" data-i18n="project.card3.meta">Website Kecantikan</p>
+                            <p class="project-description" data-i18n="project.card3.description">Website klinik estetik modern dengan alur booking jelas.</p>
+                            <div class="project-chip-list" aria-hidden="true">
+                                <span class="project-chip" data-i18n="project.card3.badge1">UI Elegan</span>
+                                <span class="project-chip" data-i18n="project.card3.badge2">Alur Booking</span>
+                            </div>
+                            <span class="project-card-cta" data-i18n="project.card3.cta">Lihat Website</span>
+                        </div>
+                    </a>
+                    <a class="project-link-card card-rich card-d" href="https://personal-branding-inky.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="View Personal Branding Project">
+                        <img src="l.jpeg" alt="Personal branding website preview" class="project-image">
+                        <div class="project-content project-content-rich">
+                            <span class="project-index">04</span>
+                            <h3 data-i18n="project.card4.title">Personal Branding</h3>
+                            <p class="project-meta" data-i18n="project.card4.meta">Website Personal</p>
+                            <p class="project-description" data-i18n="project.card4.description">Website personal branding modern untuk menonjolkan profil dan karya.</p>
+                            <div class="project-chip-list" aria-hidden="true">
+                                <span class="project-chip" data-i18n="project.card4.badge1">Personal Brand</span>
+                                <span class="project-chip" data-i18n="project.card4.badge2">Portfolio</span>
+                            </div>
+                            <span class="project-card-cta" data-i18n="project.card4.cta">Lihat Website</span>
+                        </div>
+                    </a>
+                    <a class="project-link-card card-rich card-e" href="https://company-profile-vert.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View Bursa Mobil Project">
+                        <img src="h.jpeg" alt="Bursa mobil website preview" class="project-image">
+                        <div class="project-content project-content-rich">
+                            <span class="project-index">05</span>
+                            <h3 data-i18n="project.card5.title">Bursa Mobil</h3>
+                            <p class="project-meta" data-i18n="project.card5.meta">Website Bursa Mobil</p>
+                            <p class="project-description" data-i18n="project.card5.description">Website bursa mobil untuk menampilkan daftar kendaraan yang tersedia.</p>
+                            <div class="project-chip-list" aria-hidden="true">
+                                <span class="project-chip" data-i18n="project.card5.badge1">Car Listing</span>
+                                <span class="project-chip" data-i18n="project.card5.badge2">Search Filter</span>
+                            </div>
+                            <span class="project-card-cta" data-i18n="project.card5.cta">Lihat Website</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT SECTION ============ -->
+    <section class="contact" id="contact">
+        <div class="contact-decoration left"></div>
+        <div class="contact-decoration right"></div>
+        <div class="container">
+            <div class="contact-content scroll-reveal">
+                <h2 data-i18n="contact.title">Hubungi Saya</h2>
+                <p data-i18n="contact.subtitle">Isi form di bawah untuk diskusi project. Saya akan lanjutkan via WhatsApp.</p>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" data-i18n-placeholder="contact.name" placeholder="Nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" data-i18n-placeholder="contact.email" placeholder="Email Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" data-i18n-placeholder="contact.message" placeholder="Ceritakan kebutuhan project kamu" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large" data-i18n="contact.submit">Kirim Permintaan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footer.copy">&copy; 2026 Charlie Michael. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- ============ WHATSAPP FLOATING BUTTON ============ -->
+    <a href="https://wa.me/6281386383801?text=Hi%20Charlie!%20I%27m%20interested%20in%20working%20together." target="_blank" class="whatsapp-button" data-i18n-title="whatsapp.title" title="Chat via WhatsApp">
+        <svg viewBox="0 0 24 24" fill="white">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-9.746 9.798c0 2.719.738 5.361 2.138 7.646l-2.257 6.591 6.753-2.212c2.163 1.195 4.588 1.82 7.111 1.82h.006a9.871 9.871 0 009.797-9.864c0-2.633-.731-5.218-2.119-7.454a9.84 9.84 0 00-7.523-4.325zM12.02 0C5.395 0 .016 5.313.016 11.988c0 2.111.547 4.179 1.589 6.01L.043 24l6.305-2.07c1.91 1.05 4.061 1.605 6.362 1.605 6.625 0 12.004-5.313 12.004-11.988S18.645 0 12.02 0z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
